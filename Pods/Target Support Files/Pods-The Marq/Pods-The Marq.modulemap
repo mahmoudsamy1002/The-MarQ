@@ -1,0 +1,6 @@
+framework module Pods_The_Marq {
+  umbrella header "Pods-The Marq-umbrella.h"
+
+  export *
+  module * { export * }
+}

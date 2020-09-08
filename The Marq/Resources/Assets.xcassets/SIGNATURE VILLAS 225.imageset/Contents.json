@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "SIGNATURE VILLAS 225.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "SIGNATURE VILLAS 225@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "SIGNATURE VILLAS 225@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
