@@ -24,7 +24,7 @@ class InterestedVC: UIViewController, MFMailComposeViewControllerDelegate {
     
     @IBAction func senBtnTapped(_ sender: UIButton) {
         
-        let toRecipients = ["mahmoud.samy1002@gmail.com"]
+        let toRecipients = ["sales@theaddressinv.com"]
         
         // Modify following variables with your text / recipient
         //        let recipientEmail = "test@email.com"
