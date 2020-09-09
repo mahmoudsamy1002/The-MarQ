@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "370b.png",
+      "filename" : "instagram-sketched.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "370b@2x.png",
+      "filename" : "instagram-sketched@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "370b@3x.png",
+      "filename" : "instagram-sketched@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

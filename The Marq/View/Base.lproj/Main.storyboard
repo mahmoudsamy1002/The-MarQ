@@ -32,7 +32,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RD4-ZK-wqe" userLabel="Register Button">
                                 <rect key="frame" x="32" y="677" width="350" height="65.666666666666629"/>
-                                <color key="backgroundColor" white="0.15200880271931216" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="INTERESTED">
                                     <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,6 +47,20 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="qqx-qO-Q42">
                                 <rect key="frame" x="0.0" y="174.33333333333337" width="414" height="383"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieM-0B-TYk">
+                                <rect key="frame" x="363" y="540" width="19" height="22"/>
+                                <state key="normal" title="Instagram" image="instagram-sketched"/>
+                                <connections>
+                                    <action selector="instagramBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ltt-hg-b7S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZN-Bo-8Ua">
+                                <rect key="frame" x="363" y="505" width="21" height="23"/>
+                                <state key="normal" title="Button" image="facebook (2)"/>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqF-GP-F5C"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -54,13 +68,22 @@
                             <constraint firstItem="FMw-oH-W7O" firstAttribute="top" secondItem="RD4-ZK-wqe" secondAttribute="bottom" constant="11.5" id="75c-Jf-1bV"/>
                             <constraint firstItem="Bk2-hq-t34" firstAttribute="bottom" secondItem="RD4-ZK-wqe" secondAttribute="bottom" constant="119.5" id="8BY-JJ-OVa"/>
                             <constraint firstItem="RD4-ZK-wqe" firstAttribute="height" secondItem="phl-QV-IlM" secondAttribute="height" multiplier="0.0641741" constant="8.0491111999999987" id="9KM-h6-aqh"/>
+                            <constraint firstItem="ieM-0B-TYk" firstAttribute="top" secondItem="eZN-Bo-8Ua" secondAttribute="bottom" constant="12" id="9c2-eg-HUP"/>
                             <constraint firstItem="Bk2-hq-t34" firstAttribute="trailing" secondItem="RD4-ZK-wqe" secondAttribute="trailing" constant="32" id="Gq3-XX-6Gf"/>
                             <constraint firstItem="FMw-oH-W7O" firstAttribute="trailing" secondItem="RD4-ZK-wqe" secondAttribute="trailing" id="ICc-hv-Vxu"/>
+                            <constraint firstItem="ieM-0B-TYk" firstAttribute="trailing" secondItem="qqx-qO-Q42" secondAttribute="trailing" constant="-32" id="K1S-Dr-hHs"/>
+                            <constraint firstItem="ieM-0B-TYk" firstAttribute="height" secondItem="phl-QV-IlM" secondAttribute="height" multiplier="0.0424107" constant="-15.9999872" id="N2B-fA-AmS"/>
+                            <constraint firstItem="ieM-0B-TYk" firstAttribute="width" secondItem="phl-QV-IlM" secondAttribute="width" multiplier="0.0772947" constant="-13.000005799999997" id="Oer-vh-TR6"/>
+                            <constraint firstItem="eZN-Bo-8Ua" firstAttribute="height" secondItem="ieM-0B-TYk" secondAttribute="height" constant="1" id="Xmt-vg-OFH"/>
+                            <constraint firstItem="eZN-Bo-8Ua" firstAttribute="width" secondItem="ieM-0B-TYk" secondAttribute="width" constant="2" id="cIf-Ls-4Bl"/>
                             <constraint firstItem="FMw-oH-W7O" firstAttribute="width" secondItem="RD4-ZK-wqe" secondAttribute="width" id="dEg-Qd-3Ip"/>
                             <constraint firstItem="RD4-ZK-wqe" firstAttribute="top" secondItem="qqx-qO-Q42" secondAttribute="bottom" multiplier="1.2" constant="8" symbolic="YES" id="eYB-3Z-ZCw"/>
+                            <constraint firstItem="eZN-Bo-8Ua" firstAttribute="trailing" secondItem="ieM-0B-TYk" secondAttribute="trailing" constant="2" id="fQf-hU-R1p"/>
+                            <constraint firstItem="Bk2-hq-t34" firstAttribute="top" secondItem="ieM-0B-TYk" secondAttribute="top" constant="-400" id="irx-fd-WtI"/>
                             <constraint firstItem="FMw-oH-W7O" firstAttribute="height" secondItem="RD4-ZK-wqe" secondAttribute="height" multiplier="0.997101" constant="0.12900549999999811" id="o47-1T-d4P"/>
                             <constraint firstItem="qqx-qO-Q42" firstAttribute="width" secondItem="phl-QV-IlM" secondAttribute="width" id="pX9-oi-7ZU"/>
                             <constraint firstItem="qqx-qO-Q42" firstAttribute="centerX" secondItem="Bk2-hq-t34" secondAttribute="centerX" id="sJQ-dK-0RL"/>
+                            <constraint firstItem="eZN-Bo-8Ua" firstAttribute="leading" secondItem="ieM-0B-TYk" secondAttribute="leading" id="sqJ-bw-t0W"/>
                             <constraint firstItem="qqx-qO-Q42" firstAttribute="height" secondItem="phl-QV-IlM" secondAttribute="height" multiplier="0.427455" id="xHz-nr-p7a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bk2-hq-t34"/>
@@ -136,7 +159,7 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="20"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="sendBtnTapped:" destination="0WP-lH-HVl" eventType="touchUpInside" id="jWC-K4-Wg8"/>
+                                                    <action selector="senBtnTapped:" destination="0WP-lH-HVl" eventType="touchUpInside" id="fOU-X2-Fdn"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -213,36 +236,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONTACT INFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpP-QO-32N">
-                                <rect key="frame" x="20" y="113" width="240" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSx-gI-MrG">
-                                <rect key="frame" x="20" y="163" width="374" height="237"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Sales center address: Building 15, 4th Sector, South 90 St.
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqu-lg-gKb">
+                                <rect key="frame" x="10" y="86" width="394" height="314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSx-gI-MrG">
+                                        <rect key="frame" x="13" y="84" width="371" height="174"/>
+                                        <string key="text">Sales center address: Building 15, 4th Sector, South 90 St.
 
-Real estate inquiries: 16669
-
-Email: sales@addressdev.com
 Real estate inquiries: 16669
 
 Email: sales@addressdev.com</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95654100180000001" green="0.95567291980000002" blue="0.97391301389999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTACT INFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpP-QO-32N">
+                                <rect key="frame" x="20" y="113" width="240" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qqu-lg-gKb" firstAttribute="centerX" secondItem="wzR-QO-23e" secondAttribute="centerX" id="3dW-l7-MHW"/>
+                            <constraint firstItem="qqu-lg-gKb" firstAttribute="top" secondItem="RpP-QO-32N" secondAttribute="bottom" constant="-70" id="Gjt-4q-sD1"/>
+                            <constraint firstItem="RpP-QO-32N" firstAttribute="height" secondItem="qqu-lg-gKb" secondAttribute="height" multiplier="0.136943" id="MpX-5s-ppx"/>
+                            <constraint firstItem="qqu-lg-gKb" firstAttribute="height" secondItem="VoX-EY-BCg" secondAttribute="height" multiplier="0.350446" id="VNh-KC-AFE"/>
+                            <constraint firstItem="qqu-lg-gKb" firstAttribute="top" secondItem="wzR-QO-23e" secondAttribute="top" constant="42" id="XqV-l7-Mgf"/>
+                            <constraint firstItem="GSx-gI-MrG" firstAttribute="width" secondItem="RpP-QO-32N" secondAttribute="width" multiplier="1.54583" id="aDa-8c-Dvn"/>
+                            <constraint firstItem="RpP-QO-32N" firstAttribute="width" secondItem="qqu-lg-gKb" secondAttribute="width" multiplier="0.609137" id="ayN-b5-hF4"/>
+                            <constraint firstItem="qqu-lg-gKb" firstAttribute="width" secondItem="VoX-EY-BCg" secondAttribute="width" multiplier="0.951691" id="bmQ-ub-SdS"/>
+                            <constraint firstItem="GSx-gI-MrG" firstAttribute="leading" secondItem="RpP-QO-32N" secondAttribute="leading" constant="3" id="pHG-Kd-z5h"/>
+                            <constraint firstItem="GSx-gI-MrG" firstAttribute="height" secondItem="RpP-QO-32N" secondAttribute="height" multiplier="4.04651" id="qYe-U3-lOB"/>
+                            <constraint firstItem="RpP-QO-32N" firstAttribute="leading" secondItem="VoX-EY-BCg" secondAttribute="leadingMargin" id="qsV-EC-Xbf"/>
+                            <constraint firstItem="GSx-gI-MrG" firstAttribute="top" secondItem="RpP-QO-32N" secondAttribute="bottom" constant="14" id="wv9-Z1-u8f"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wzR-QO-23e"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVd-lu-Sej" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3267" y="-218"/>
+            <point key="canvasLocation" x="3266.666666666667" y="-218.30357142857142"/>
         </scene>
         <!--About UsVC-->
         <scene sceneID="eac-hn-f5U">
@@ -612,6 +650,8 @@ THE MARQ COMMUNITIES LATEST PROJECT</string>
         <image name="BottomGradient" width="414" height="298"/>
         <image name="Logo" width="491" height="420"/>
         <image name="Menu" width="24" height="24"/>
+        <image name="facebook (2)" width="170.66667175292969" height="170.66667175292969"/>
         <image name="hawaiiResort" width="16" height="16"/>
+        <image name="instagram-sketched" width="170.66667175292969" height="170.66667175292969"/>
     </resources>
 </document>

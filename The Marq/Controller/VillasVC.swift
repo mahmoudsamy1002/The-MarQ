@@ -23,13 +23,13 @@ class VillasVC: UIViewController {
     func getData() {
         
         let project1 = Villas(name: "Town Villa 185", image: "Town Villa 185", deatImages: ["185", "185b", "185c", "185d", "185e"])
-        let project2 = Villas(name: "Town Villa 200", image: "Town Villa 200", deatImages: ["200", "200b", "200c", "200d", "200e"])
-        let project3 = Villas(name: "Town Villa 220", image: "Town Villa 220", deatImages: ["220", "220b", "220c", "220d"])
-        let project4 = Villas(name: "Town Villa 220 V", image: "Town Villa 220 V", deatImages: ["220v", "220vb", "220vc", "220vd-1"])
+        let project2 = Villas(name: "Town Villa 200", image: "Town Villa 200", deatImages: ["200", "200b", "200c", "185d", "200e"])
+        let project3 = Villas(name: "Town Villa 220", image: "Town Villa 220", deatImages: ["220", "185d", "220c", "220d"])
+        let project4 = Villas(name: "Town Villa 220 V", image: "Town Villa 220 V", deatImages: ["220v", "220vb", "185d", "220vd-1"])
         let project5 = Villas(name: "Town Villa 230", image: "Town Villa 230", deatImages: ["230", "230b", "230c", "230d"])
         let project6 = Villas(name: "Town Villa 270", image: "Town Villa 270", deatImages: ["270", "270b", "270c", "270d"])
-        let project7 = Villas(name: "SIGNATURE VILLAS 225", image: "SIGNATURE VILLAS 225", deatImages: ["225", "225b", "225c", "225d"])
-        let project8 = Villas(name: "SIGNATURE VILLAS 370", image: "SIGNATURE VILLAS 370", deatImages: ["370", "370b", "370c", "370d"])
+        let project7 = Villas(name: "SIGNATURE VILLAS 225", image: "SIGNATURE VILLAS 225", deatImages: ["225", "225b", "185d", "225d"])
+        let project8 = Villas(name: "SIGNATURE VILLAS 370", image: "SIGNATURE VILLAS 370", deatImages: ["370", "185d", "185d", "370d"])
         
         
         projectsArr = [project1, project2, project3, project4, project5, project6, project7, project8]

@@ -8,17 +8,17 @@
 
 import UIKit
 import SideMenu
-
+import SafariServices
 
 class HomeVC: UIViewController, MenuListControllerDelegate {
-
+    
     var sidemenu: SideMenuNavigationController?
     
     var home: UIViewController!
-        var villasVC: UIViewController!
-        var aboutUsVC: UIViewController!
-        var interestedVC: UIViewController!
-        var visitUsVC: UIViewController!
+    var villasVC: UIViewController!
+    var aboutUsVC: UIViewController!
+    var interestedVC: UIViewController!
+    var visitUsVC: UIViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +48,7 @@ class HomeVC: UIViewController, MenuListControllerDelegate {
         aboutUsVC    = storyboard?.instantiateViewController(withIdentifier: VCs.aboutUsVC)
         interestedVC = storyboard?.instantiateViewController(withIdentifier: VCs.registerVC)
         visitUsVC    = storyboard?.instantiateViewController(withIdentifier: VCs.visitUsVC)
-
+        
         addChild(villasVC)
         addChild(aboutUsVC)
         addChild(interestedVC)
@@ -107,10 +107,10 @@ class HomeVC: UIViewController, MenuListControllerDelegate {
             }
             
             if named == "ABOUT US" {
-               self?.villasVC.view.isHidden      = true
-               self?.aboutUsVC.view.isHidden     = false
-               self?.interestedVC.view.isHidden  = true
-               self?.visitUsVC.view.isHidden     = true
+                self?.villasVC.view.isHidden      = true
+                self?.aboutUsVC.view.isHidden     = false
+                self?.interestedVC.view.isHidden  = true
+                self?.visitUsVC.view.isHidden     = true
             }
             
             if named == "VISIT US" {
@@ -118,7 +118,7 @@ class HomeVC: UIViewController, MenuListControllerDelegate {
                 self?.aboutUsVC.view.isHidden    = true
                 self?.interestedVC.view.isHidden = true
                 self?.visitUsVC.view.isHidden    = false
-           }
+            }
         })
     }
     
@@ -126,8 +126,39 @@ class HomeVC: UIViewController, MenuListControllerDelegate {
     @IBAction func didTapMenu() {
         present(sidemenu!, animated: true)
     }
- 
+    
+    @IBAction func instagramBtnTapped(_ sender: Any) {
+        
+        let application = UIApplication.shared
+        let instagramAppPath = "instagram/themarq.eg/"
+        let appUrl = URL(string: instagramAppPath)!
+        let websiteUrl = URL(string: "https://www.instagram.com/themarq.eg/")!
+        if application.canOpenURL(appUrl) {
+            application.open(appUrl, options: [:], completionHandler: nil)
+            
+        } else {
+            
+            application.open(websiteUrl)
+        }
+    }
+    
+    
+    @IBAction func facebookBtnTapped(_ sender: Any) {
+        let safariVC = SFSafariViewController(url: URL(string: "https://www.facebook.com/themarq.eg/")!)
+        present(safariVC, animated: true)
+    }
+    
 
+    @IBAction func registerBtnPressed(_ sender: UIButton) {
+        goToInterestedVC()
+    }
+    
+    
+    @IBAction func laterBtnPressed(_ sender: UIButton) {
+        goVillasVC()
+    }
+    
+    
     private func goToInterestedVC() {
         let registerVC = UIStoryboard(name: Storyboards.main, bundle: nil).instantiateViewController(withIdentifier: VCs.registerVC)  as! InterestedVC
         
@@ -139,16 +170,8 @@ class HomeVC: UIViewController, MenuListControllerDelegate {
         let villasVC = UIStoryboard(name: Storyboards.main, bundle: nil).instantiateViewController(withIdentifier: VCs.villasVC)  as! VillasVC
         self.navigationController?.pushViewController(villasVC, animated: true)
     }
-
-    
-    @IBAction func registerBtnPressed(_ sender: UIButton) {
-        goToInterestedVC()
-    }
     
     
-    @IBAction func laterBtnPressed(_ sender: UIButton) {
-        goVillasVC()
-    }
 }
 
 
